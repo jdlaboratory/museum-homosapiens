@@ -1,0 +1,16 @@
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.bnt-wrap {
+  transition: all 1s ease-in-out;
+}
+
+.btn-md {
+  font-size: 1rem;
+  padding: 10px 20px;
+  letter-spacing: -0.4px;
+  font-weight: 500;
+  border-radius: 50px;
+}

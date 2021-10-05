@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title 호모사피엔스 - 국립중앙박물관
+        link(rel="stylesheet", href="css/style.css")
+
+        link(rel="stylesheet", 
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css", 
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm",
+            crossorigin="anonymous")
+    body(style="background-color: #f1f1f1;")
+        div.main-wrap
+            div.intro
+                div.intro__title
+                    h1 호모사피엔스:
+                div.intro__desc
+                    div.intro__desc-left
+                        p 진화∞
+                        p 관계＆
+                        p 미래？
+                    div.intro__desc-right.eng-font
+                        p HOMOSAPIENS:
+                        p EVOLUTION&infin;
+                        p RELATIONSHIP&#xFF06;
+                        p FUTURE&#xFF1F;
+                div.intro__button.btn-wrap
+                    a(href='/html/zone-00.html')
+                        span.btn-md 관람하기
+            div.intro-bg
+            div.intro-video
+                video.video-js(data-setup='{"controls": false, "autoplay": "muted", "preload": "auto","fill": true,"loop" : true}')
+                    source(src='./assets/videos/1_timelapse.mp4' type='video/mp4')
+        script(src="https://vjs.zencdn.net/7.15.4/video.min.js") 

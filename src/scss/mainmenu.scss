@@ -1,0 +1,29 @@
+nav {
+  background-color: #2e313e;
+  color: #fff;
+  font-size: 14px;
+  height: 60px;
+}
+
+nav ul {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+nav ul li h6 {
+  font-size: 20px;
+  margin-right: 40px;
+}
+nav ul li p a {
+  font-weight: 500;
+}
+nav ul li p a.active,
+nav ul li p a:hover {
+  color: var(--accent-color);
+}

@@ -1,0 +1,25 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true }')
+                source(src="/assets/videos/0-1a.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='/index.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 기획전시실 입구
+            span
+                a(href='/html/zone-00-1.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 전시소개
+            p 안녕하십니까?
+            p 
+                | 특별전 
+                strong [호모 사피엔스 : 진화∞ 관계& 미래?]
+                | 담당자인 김동완 학예연구사입니다.
+        div(class="info-bottom")
+block footer
+    script(src="/js/endAuto.js")

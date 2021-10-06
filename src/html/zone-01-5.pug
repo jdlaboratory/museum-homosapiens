@@ -1,0 +1,21 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/cave_2.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-4.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 네안데르탈인의 무덤
+            span
+                a(href='./zone-01-6.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 네안데르탈인의 무덤
+            p 장례라는 행위에는 죽음과 사후세계에 대한 호모 사피엔스의 인식이 반영되어 있습니다. 네안데르탈인의 무덤도 발견되지만, 호모 사피엔스의 무덤에는 부장품을 넣는 행위가 본격적으로 나타나고 장례 행위도 복잡해집니다. 이러한 장례 행위는 인간에게만 확인되는 행위로 인간의 인식과 사고가 새로운 영역에 도착했음을 알려줍니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

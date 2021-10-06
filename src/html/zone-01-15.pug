@@ -1,0 +1,23 @@
+
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/2_insert 07.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-14.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 실감콘텐츠 ‘함께하는 여정’
+            span
+                a(href='./zone-01-16-360.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 실감콘텐츠 ‘함께하는 여정’
+            p 전시실 중심을 가로지르는 긴 벽면 전체에 미러바리솔을 설치하여 공간의 확장감을 부여했습니다. 디채로운 연출과 함께 과거와 현재, 인류와 자연, 미래의 공존의 의미를 사유해 볼 수 있는 공간을 만들었습니다. 
+            
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

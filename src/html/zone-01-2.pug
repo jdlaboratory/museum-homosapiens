@@ -1,0 +1,21 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/1-cave.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-1.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 기획2실 에필로그
+            span
+                a(href='./zone-01-3-360.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 제2부 호모 사피엔스
+            p 이번 전시실에서는 호모 사피엔스의 특징을 크게 예술, 장례, 도구, 언어와 기후, 탐험 등으로 살펴볼 것입니다. 중요한 점은 오늘날 우리 문화의 기원은 후기 구석기시대의 호모 사피엔스부터 시작되었다는 점입니다. 이곳은 동굴과 동굴 밖의 세상이라는 대비되는 공간이 연출됩니다. 입구에는 천정을 낮게 설치하여 마치 동굴에 들어온 것과 같은 공간감을 부여합니다. 동굴 안으로 들어오면 프로젝션 영상으로 연출된 쇼베, 라스코, 알타미라와 같은 대표적인 동굴의 벽화를 감상할 수 있습니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endAuto.js")

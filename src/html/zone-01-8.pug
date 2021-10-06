@@ -1,0 +1,24 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/cave-satelite-d.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-7.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 도구
+            span
+                a(href='./zone-01-9.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 도구
+            p 주먹도끼, 르발루아 몸돌, 돌날 기법, 슴베찌르개, 작은 돌날 몸돌
+            p 호모 사피엔스가 남긴 도구, 언어와 기호, 탐험 등을 계속해서 보실 수 있습니다. 특히 도구 영역은 약 300만 년에 걸친 도구의 발달사를 13m 대형 파노라마 형태로 연출하였습니다. 이 줄을 중심으로 윗부분은 유럽에 있는 실험고고학자에게 의뢰하여 구석기시대 석기 제작기법으로 만든 석기들이고 아랫부분은 한반도 구석기유적에서 발견된 석기들입니다. 
+            p 교과서에도 나오는 주먹도끼는 인간이 만든 인공물 중에서 최초로 정형성이 있고 좌우 대칭성을 갖춘 유물입니다. 이렇게 대칭적인 형태로 만드는 과정은 인간(호모 에렉투스)의 지적 발달이 일정 수준에 도달했다는 증거이기도 합니다. 
+            p 시간이 지날수록 석기의 크기가 작아지는 것을 알 수 있습니다. 처음에는 주먹도끼처럼 대형석기를 사용하다가 점점 격지를 가공하여 소형석기를 더 많이 사용하게 됩니다. 특히 호모 사피엔스는 4만 년 전 무렵 대량생산, 표준화, 정형화 등으로 특징지을 수 있는 돌날석기를 만들게 됩니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

@@ -1,0 +1,23 @@
+
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/satelite-2.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-13.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 실감콘텐츠 ‘함께하는 여정’
+            span
+                a(href='./zone-01-15.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 실감콘텐츠 ‘함께하는 여정’
+            p 앞에 펼쳐진 전시 영역은 실감형 영상과 전시품이 함께 어우러진 ‘함께하는 여정’이라는 공간입니다. 시간의 흐름을 상징하는 하늘 영상(천정), 디지털 호수(바닥)에 사라진 동물들(매머드, 동굴곰 등), 현재 살아있는 유인원(침팬지 등), 호모 사피엔스, 관람객까지 모두 함께 어울릴 수 있는 공간입니다. 
+            p 매머드는 추운 기후에 적응했던 생물종으로 기후가 온난화되면서, 그리고 호모 사피엔스의 사냥으로 인해 지구 상에서 사라진 상징성이 있는 동물입니다. 전시품은 이번 특별전을 위해 국립중앙과학관에 있는 화석을 3D 스캔한 후 3D 출력하여 제작한 것입니다. 
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

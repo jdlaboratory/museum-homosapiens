@@ -1,0 +1,22 @@
+
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/cave-satelite-f.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-10.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 탐험
+            span
+                a(href='./zone-01-12.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 탐험
+            p 탐험 영역에서는 아프리카에서 벗어나 지구 곳곳에 살게 된 과거 호모 사피엔스의 모습과 오늘날 지구를 벗어나 달, 우주까지 영역을 확장한 현대 호모 사피엔스의 모습을 담고 있습니다. 전시 중인 인공위성은‘아리랑 1호’이며 인간의 영역이 이제 우주로까지 확대되고 있음을 보여줍니다.  
+        div(class="info-bottom")
+block footer
+    script(src="../js/endAuto.js")

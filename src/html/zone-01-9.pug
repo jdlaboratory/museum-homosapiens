@@ -1,0 +1,22 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/cave-satelite-e.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-8.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 언어와 기호
+            span
+                a(href='./zone-01-10.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 언어와 기호 
+            p 눈금을 새긴 돌
+            p 여기 보이는 ‘눈금을 새긴 돌’은 3∼4만 년 전의 유물로 당시 인간 집단의 수나 사냥감의 수 등을 표현한 기호로 추정됩니다. 이는 인간의 머리 속에 있는 정보를 밖으로 꺼내 표현했다는 점에서 중요한 의미가 있습니다. 네안데르탈인은‘아, 이, 우’ 같은 일부 모음은 발음하기 어려웠다는 연구결과도 있습니다. 호모 사피엔스는 발달된 언어와 기호를 통해 더 큰 집단을 유지할 수 있었고, 구성원간의 협력을 통해 오늘날까지 생존할 수 있었습니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

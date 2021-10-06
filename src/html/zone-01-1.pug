@@ -2,15 +2,15 @@ extends ../templates/layout
 block content 
     div(class="content")
         div(class="content-main")
-            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true }')
-                source(src="../assets/videos/1-5.mp4", type="video/mp4")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/connection.mp4", type="video/mp4")
             
         div(class="content-nav")
             span 
-                a(href='./zone-00-index.html') ← &nbsp; 이전
-            span(class="current") 현재위치: 연결로
+                a(href='./zone-01.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 연결로 영상
             span
-                a(href='./zone-01-1.html') 다음 &nbsp; →
+                a(href='./zone-01-2.html') 다음 &nbsp; →
 block info 
     div(class="info")
         div(class="info-top")

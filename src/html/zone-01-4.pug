@@ -1,0 +1,24 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/cave_1.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-3-360.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 사자인간, 빌렌도로프 비너스
+            span
+                a(href='./zone-01-5.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 사자인간
+            p 호모 사피엔스는 좁고 어두운 동굴 속에서 피카소가 극찬할 정도로 훌륭한 예술작품을 남겼습니다. 그리고 사자인간, 비너스 등 많은 조각품을 만들었습니다. 호모 사피엔스의 특징으로 ‘상상력’, ‘허구를 믿는 능력’ 등을 강조합니다. 여기 보시는 사자인간은 반인반수로 ‘상상력의 기원’으로 평가하기도 합니다. 이는 세상에 존재하지 않는 상상 속 존재로서 호모 사피엔스의 상상력을 나타내는 대표적인 사례로 언급됩니다.
+            span.divider
+            h5 빌렌도르프 비너스
+            p 2만 6천년 전 무렵 기후는 더 추워지는데, 이 시기 유럽에서 만들어진 비너스는 나체 상태로 머리, 다리가 축소되고 늘어진 가슴, 과장된 배와 허리, 엉덩이 등이 특징입니다. 많은 연구자들은 비너스가 다산, 풍요, 생식력의 상징이라고 생각합니다. 변화하는 환경에 적응하여 살아남기 위해서는 호모 사피엔스에게 집단의 규모는 생존과 연관된 중요한 문제였습니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

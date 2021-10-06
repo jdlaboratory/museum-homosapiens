@@ -1,0 +1,31 @@
+
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/ending.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-16-360.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 에필로그
+            span
+                a(href='./zone-01-index.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h6 행성 지구의 역사 46억 년
+            p 생명이 탄생한 이래 5차례의 대멸종이 있었습니다. 그때마다 75%의 생물종이 사라져버렸습니다.
+            h6 인간 진화의 역사 700만 년
+            p 매머드를 비롯한 많은 종은 인간의 손에 멸종되었습니다. 호모 사피엔스의 과도한 탐욕 탓일 수 있습니다.
+            h6 21세기, 호모 사피엔스 최고의 번성기.
+            p 78억 명이 지구를 가득 채우고 풍요의 삶을 만끽하고 있습니다. 그러나 이 번성의 이면에 큰 위험이 자라고 있습니다.
+            h6 인간이 키우고 있는 지구의 암‘환경오염’
+            p 그로인해 6번째 대멸종이 닥칠 수 있다고 경고하고 있습니다. 인간도 거기에서 결코 예외일 수 없습니다.
+            h6 모든 종이 그물처럼 얽혀 있는 지구 생태계
+            p 과학의 눈부신 발전으로 절대 힘을 갖게 된 우리 호모 사피엔스는 우리의 삶이 다른 종들과 연결되어 있음을 기억해야합니다.
+            
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

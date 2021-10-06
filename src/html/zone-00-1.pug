@@ -1,0 +1,37 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true }')
+                source(src="../assets/videos/0-1b.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-00.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 다양한 인간의 정의 360
+            span
+                a(href='./zone-00-2.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            p 전시실로 이동하시겠습니다. 이곳은 관람객 분들이 대기하는 공간으로 벽에는 다양한 인간의 정의와 전시 제목에 있는 기호들의 의미가 적혀 있습니다.
+            span.divider 
+            h5 다양한 인간의 정의
+            p 앞에 보이는 문장들은 동서양에서 인간에 대한 다양한 정의, 격언들을 적어 놓은 것입니다.
+            h6 1) 송시열 선생 문구
+            p 고려시대 송시열 선생님도 인간의 번영과 쇠퇴에 대한 말씀을 남겨 주셨습니다.
+            h6 2) 전시 제목의 의미
+            p 특별전 제목 ‘호모 사피엔스 : 진화∞ 관계& 미래?’옆에 기호가 하나씩 붙어 있습니다. 각각의 기호는 전시에서 전달하는 메시지이고 아래와 같은 의미가 있습니다.
+            span.divider
+            h5 기호의 의미
+            p 
+                | ∞ 인류의 진화는 현재에도 계속 진행 중이고
+                br
+                | & 진화과정에서 다른 생물종과 관계를 맺어왔으며
+                br
+                | ? 미래는 불확실하기 때문에 우리는 다른 생물종과 공생하며 대비해야 합니다.
+          
+          
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

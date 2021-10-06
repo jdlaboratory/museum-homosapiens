@@ -1,0 +1,16 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos/1_wall 02.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-00-11.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 벽면
+            span
+                a(href='./zone-00-13.html') 다음 &nbsp; →
+
+block footer
+    script(src="../js/endNext.js")

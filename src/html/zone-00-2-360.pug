@@ -11,17 +11,9 @@ block content
             span(class="current") 현재위치: 실감콘텐츠 700만년 동안의 기억
             span
                 a(href='./zone-00-3.html') 다음 &nbsp; →
-block info 
+
     
 block footer
     script(src="../js/endNext.js")
     script(src="../pre-js/videojs-vr.js")
     script(src="../pre-js/modal360.js")
-    script.
-        (function(window, videojs) {
-        var player = window.player = videojs('videojs-vr-player');
-        player.mediainfo = player.mediainfo || {};
-        player.mediainfo.projection = '360';
-        // AUTO is the default and looks at mediainfo
-        var vr = window.vr = player.vr({projection: 'AUTO', debug: true, forceCardboard: false});
-        }(window, window.videojs));

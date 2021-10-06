@@ -1,0 +1,21 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos/1-4.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-00-8.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 화석
+            span
+                a(href='./zone-00-10-360.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h6 7) 크로마뇽인, 호모 사피엔스
+            p 긴 여정을 거쳐 우리와 같은 존재인 호모 사피엔스, 크로마뇽인을 보고 계십니다. 크로마뇽인은 큰 두뇌, 높은 이마, 눈에 띄는 턱 등 현대인의 특징을 잘 보여줍니다. 오늘날 지구에는 다른 고인류는 사라지고 우리, 호모 사피엔스만이 남아 있습니다. 지금까지 700만 년 동안 호모 사피엔스가 되는 과정, 호모 사피엔스의 과거를 보신 셈입니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

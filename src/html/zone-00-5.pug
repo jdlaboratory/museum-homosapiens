@@ -1,0 +1,23 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos/1_prologue.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-00-4.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 1) 종의 기원
+            span
+                a(href='./zone-00-6.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h6 1) 종의 기원
+            p 프롤로그에서는 인류의 기원에 대한 물음을 종교의 영역에서 과학의 영역으로 가져온 ‘종의 기원’과 당시 사람들의 진화에 대한 편견을 엿볼 수 있는‘필트다운인’사건을 소개하고 있습니다. ‘종의 기원’이 발간된 이후, 연구자들 사이에는 진화과정에서 큰 두뇌가 다른 신체 변화보다 먼저 나타났을 것이라는 인간 우월적인 편견이 있었습니다. 
+            h6 2) 필트다운인
+            p 필트다운인은 인간처럼 큰 두뇌에 유인원처럼 원시적인 턱뼈를 가진 인간과 유인원의 중간적인 형태였습니다. 40년 가까이 관련 논문도 발표되고 연구되었던 필트다운인 화석은 1940년대에 연대측정법이 개발되면서 가짜인 것이 밝혀졌습니다. 이러한 사실은 학계에 큰 충격을 주었습니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

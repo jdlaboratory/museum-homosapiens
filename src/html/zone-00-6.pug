@@ -1,0 +1,30 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos/1_1b_warp.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-00-5.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 화석
+            span
+                a(href='./zone-00-7.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h6 
+                | 3) 루시,
+                br
+                | 오스트랄로피테쿠스 아파렌시스
+            p 가장 널리 알려진 화석 중 하나인 ‘루시’(320만 년 전)를 볼 수 있습니다. 오스트랄로프테쿠스 아파렌시스의 대표적인 화석으로 인류의 진화과정에서 ‘큰 두뇌’보다 ‘직립보행’이 먼저라는 것을 보여주는 중요한 자료입니다. 또한 흥미로운 점은 키가 110cm 인데 청소년이 아닌 성인 여성이라는 점입니다.
+            h6 
+                | 4) 나리오코톰 소년,
+                br
+                | 호모 에르가스터
+            p 200만 년 전 무렵 호모 에렉투스가 등장합니다. ‘루시’ 다음에 보이는 ‘나리오코톰 소년’(160만 년 전)은 호모 에렉투스의 성인도 아닌 11∼12세 정도의 소년입니다. 성장판이나 치아의 상태를 보면 나이를 추정할 수 있습니다. 소년인데도 저하고 키가 비슷합니다. 앞서 보신 ‘루시’와 비교해 보시면 확연히 달라진 점을 확인할 수 있습니다. 긴 다리를 비롯해서 늘씬한 체형을 가지고 있고, 현재 우리의 모습과 비슷해졌습니다. 호모 에렉투스는 아프리카를 벗어나 유럽, 아시아로 확산하였으며 불과 석기를 사용했고 두뇌도 커졌습니다. ‘루시’와 비교할 때 이 정도의 체형을 유지하려면 고기도 먹었을 것이고 식단에도 많은 변화가 있었을 것입니다.
+            p 기후변화 양상을 살펴보면 호모 속이 등장하는 250∼200만 년 전 무렵 기후변화가 극심해집니다. 인류가 이러한 기후변화 속에서 생존하는 과정에서 호모 속으로의 진화가 나타났다는 점도 의미가 있습니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

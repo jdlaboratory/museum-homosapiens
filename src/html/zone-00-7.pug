@@ -1,0 +1,24 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos/1-2.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-00-6.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 화석
+            span
+                a(href='./zone-00-8.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h6 
+                | 5) 페라시에서 발견된 사람,
+                br 
+                | 호모 네안데르탈렌시스
+            p 우리와 가장 가까운 친척이었던 네안데르탈인입니다. 호모 네안데르탈렌시스는 추운 기후에 적응한 고인류로 알려져 있습니다. 돌출된 얼굴, 큰 비강구조, 강건한 신체구조, 열손실이 적은 체형 등이 특징입니다. 뼈에 외상을 입은 흔적이 자주 발견됩니다. 또한 앞니가 심하게 마모된 경우도 있는데, 이는 도구로 사용한 흔적으로 보입니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

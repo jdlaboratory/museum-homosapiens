@@ -1,0 +1,26 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos/1_1a.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-00-3.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 기획1실 프롤로그
+            span
+                a(href='./zone-00-5.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5  
+                | 기획1실 프롤로그:
+                br 
+                | 진화를 이해하는 방식
+            p 다음은 앞서 만난 미지의 인간에 대한 구체적인 증거들을 탐색하는 곳입니다. 백과사전을 펼쳐 놓은 듯한 공간에서 인류가 진화해온 700만 년 간의 과정, 28종의 고인류 화석, 기후변화 등에 대한 자료를 보실 수 있습니다.
+            p 과거에는 구부정한 유인원에서 점점 허리가 펴지면서 손에 도구를 든 인간으로 변화하는 ‘단선진화론’을 보셨다면, 최근에는 강줄기나 나뭇가지처럼 공통조상에서 다양한 고인류가 나타나는 복잡한 가설이 지지를 받고 있습니다.
+            p 지금 보시는 전시는 그러한 가설은 공간적으로 연출한 모습입니다. 앞에서 보시면 시간의 흐름에 따라 고인류의 키도 점점 커지고 두뇌 용량이나 형태 등이 변화하고 있음을 한 눈에 보실 수 있습니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endAuto.js")

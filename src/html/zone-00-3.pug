@@ -1,0 +1,23 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos/0-1-more.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-00-2-360.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 영상 자세히 보기
+            span
+                a(href='./zone-00-4.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 실감콘텐츠 700만 년 동안의 기억
+            p 기획1실의 실감콘텐츠는‘700만년 동안의 기억’이라는 주제로 인류 진화사에서 중요한 10가지 사건들로 구성하였습니다(직립보행/기호, 예술/장례, 석기/언어, 피식자/사냥, 불/탐험).
+            p 이곳에서는 가로 약 18미터, 높이 3.6미터의 화이트 스크린으로 한 벽면을 가득 채운 3-4분 가량의 실감 영상이 연출됩니다. 5대의 프로젝터와 리어스크린을 활용하여 온통 하얗게 채워진 공간 안에서 저 너머의 미지의 인간과 조우합니다.
+            p 이 영상들은 3D모션 캡처, 과거와 현재가 전환되는 기법, 몽환적 연출 등 다양한 기법의 연출을 적용하였습니다. 우리의 유전자 속에 녹아 있는 개인적인 기억, 추억을 바라보는 느낌을 연출하기 위해 동작센서를 설치하여 관람객이 가까이 접근하면 영상이 시작합니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endNext.js")

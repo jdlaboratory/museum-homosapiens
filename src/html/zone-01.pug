@@ -1,0 +1,27 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true }')
+                source(src="../assets/videos/0-1a.mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-00-index.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 연결로
+            span
+                a(href='./zone-01-1.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 전시소개
+            p 안녕하십니까?
+            p 
+                | 특별전 
+                strong [호모 사피엔스 : 진화∞ 관계& 미래?]
+                | 담당자인 김동완 학예연구사입니다.
+            p 이번 전시는 ‘진화의 진행’, ‘환경과 공생’ 그리고 ‘인류와 미래’라는 전시 키워드를 가지고 오랜 시간 인류의 역사 속에서 쌓여온 결정적인 이미지들을 상상하며 기획, 디자인 되었습니다.
+            P 1실은 700만년간 쌓여온 지식의 축적을 상징하는 오래된 백과사전의 컨셉으로 2실은 인류가 살아간, 지구와 자연 환경을 지형적인 요소와 결합하여 입체적인 공간으로 구성되었습니다.
+        div(class="info-bottom")
+block footer
+    script(src="../js/endAuto.js")

@@ -96,6 +96,7 @@ span.divider {
 }
 
 .content-main {
+  padding-bottom: 60px;
 }
 
 .content-nav {
@@ -208,9 +209,9 @@ span.divider {
 .modal-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-flow: row;
+  grid-template-rows: repeat(auto-fill, minmax(20px, max-content));
   gap: 5%;
-  padding: 2% 4% 10% 4%;
+  padding: 2% 4%;
   overflow: hidden;
 
   p {

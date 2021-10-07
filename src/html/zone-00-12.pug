@@ -11,6 +11,12 @@ block content
             span(class="current") 현재위치: 벽면
             span
                 a(href='./zone-00-13.html') 다음 &nbsp; →
-
+block info 
+    div(class="info")
+        div(class="info-top")
+        div(class="info-bottom")
 block footer
     script(src="../js/endNext.js")
+    script. 
+        const currentLink = document.querySelector("#nav-1");
+        currentLink.classList.add("active");

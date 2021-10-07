@@ -1,10 +1,9 @@
-
 extends ../templates/layout
 block content 
-    div(class="content")
-        div(class="content-main")
-            video(class='video-js', id='videojs-vr-player', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
-                source(src="../assets/videos2/VR_2_01.mp4", type="video/mp4")
+    div(class="content full-width")
+        div(class="content-main fill")
+            video(class='video-js', id='videojs-vr-player', data-setup='{"controls": true, "autoplay": true, "preload": "auto", "fill": true }')
+                source(src="../assets/videos2/VR_cave.mp4", type="video/mp4")
             
         div(class="content-nav")
             span 
@@ -12,12 +11,12 @@ block content
             span(class="current") 현재위치: 실감콘텐츠 ‘함께하는 여정’
             span
                 a(href='./zone-01-index.html') 다음 &nbsp; →
-block info 
-    div(class="info")
-        div(class="info-top")
-            h5 실감콘텐츠 ‘함께하는 여정’
-            p 관람객이 이 공간에 들어가시면 바닥에 원이 생기면서 서로 연결이 됩니다. 이 모습은 인간, 호모 사피엔스가 생태계에서 인간과, 다른 생물종과 관계가 있음을 직관적으로 보여줍니다. 
-            p 지구 상의 모든 생물종은 그물처럼 연결되어 있습니다. 하나의 생물종이 사라질 때, 인간이라고 무사할 수 있을까요? 이러한 전시를 보시면서 우리, 호모 사피엔스의 미래에 대해 함께 고민해 보는 소중한 시간이 되었으면 합니다. 
-        div(class="info-bottom")
+
 block footer
+    script(src="../pre-js/videojs-vr.js")
+    script(src="../pre-js/video360.js")
+    script(src="../pre-js/modal360.js")
     script(src="../js/endNext.js")
+    script. 
+        const currentLink = document.querySelector("#nav-2");
+        currentLink.classList.add("active");

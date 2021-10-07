@@ -28,5 +28,9 @@
     "gulp-webserver": "^0.9.1",
     "node-sass": "^6.0.1",
     "uglifyify": "^5.0.2"
+  },
+  "dependencies": {
+    "videojs": "^1.0.0",
+    "videojs-vr": "^1.8.0"
   }
 }

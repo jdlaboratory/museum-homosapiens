@@ -1,22 +1,25 @@
 extends ../templates/layout
 block content 
-    div(class="content")
-        div(class="content-main")
-            video(class='video-js', id='videojs-vr-player', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+    div(class="content full-width")
+        div(class="content-main fill")
+            video(class='video-js', id='videojs-vr-player', data-setup='{"controls": true, "autoplay": true, "preload": "auto", "fill": true }')
                 source(src="../assets/videos2/VR_cave.mp4", type="video/mp4")
+        
             
-        div(class="content-nav")
+        div(class="content-nav full-width")
             span 
                 a(href='./zone-01-2.html') ← &nbsp; 이전
-            span(class="current") 현재위치: 동굴벽화
+            span(class="current") 현재위치: 동굴벽화 360
             span
                 a(href='./zone-01-4.html') 다음 &nbsp; →
-block info 
-    div(class="info")
-        div(class="info-top")
-            h5 제2부 호모 사피엔스
-            p 동굴벽화는 호모 사피엔스가 남긴 대표적인 예술 작품입니다. 동굴벽화를 그린 이유에 대해서는 많은 가설이 있습니다. 의식을 치르는 과정에서 그린 그림, 풍요를 기원하는 그림, 사냥을 위한 제의 과정에서 그린 그림 등 여러 가지 견해가 제시되었습니다. 
-            p 동굴벽화의 중요한 점 중 하나는‘장소성’입니다. 동굴벽화가 그려진 곳은 들어가기도 힘든 좁은 통로를 지나가는 곳이어서 일상적 거주에 적합하지 않은 곳입니다. 동굴 속은 어둡고 고요하며 소리가 공명하여 동굴 전체로 울려 퍼지는, 바깥세상과는 전혀 다른 세계였습니다. 
-        div(class="info-bottom")
+
+    
 block footer
-    script(src="../js/endAuto.js")
+    script(src="../pre-js/videojs-vr.js")
+    script(src="../pre-js/video360.js")
+    script(src="../pre-js/modal360.js")
+    script(src="../js/endNext.js")
+    script. 
+        const currentLink = document.querySelector("#nav-2");
+        currentLink.classList.add("active");
+

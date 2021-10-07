@@ -1,16 +1,25 @@
 extends ../templates/layout
 block content 
-    div(class="content")
-        div(class="content-main")
-            video(class='video-js', id='videojs-vr-player', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+    div(class="content full-width")
+        div(class="content-main fill")
+            video(class='video-js', id='videojs-vr-player', data-setup='{"controls": true, "autoplay": true, "preload": "auto", "fill": true }')
                 source(src="../assets/videos/01_360_skull.mp4", type="video/mp4")
+        
             
-        div(class="content-nav")
+        div(class="content-nav full-width")
             span 
                 a(href='./zone-00-9.html') ← &nbsp; 이전
             span(class="current") 현재위치: 화석
             span
                 a(href='./zone-00-11.html') 다음 &nbsp; →
 
+    
 block footer
+    script(src="../pre-js/videojs-vr.js")
+    script(src="../pre-js/video360.js")
+    script(src="../pre-js/modal360.js")
     script(src="../js/endNext.js")
+    
+    script. 
+        const currentLink = document.querySelector("#nav-1");
+        currentLink.classList.add("active");

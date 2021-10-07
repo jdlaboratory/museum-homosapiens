@@ -8,7 +8,7 @@ block content
         div(class="content-nav")
             span 
                 a(href='./zone-01-1.html') ← &nbsp; 이전
-            span(class="current") 현재위치: 기획2실 에필로그
+            span(class="current") 현재위치: 기획2실 프롤로그
             span
                 a(href='./zone-01-3-360.html') 다음 &nbsp; →
 block info 
@@ -19,3 +19,6 @@ block info
         div(class="info-bottom")
 block footer
     script(src="../js/endAuto.js")
+    script. 
+        const currentLink = document.querySelector("#nav-2");
+        currentLink.classList.add("active");

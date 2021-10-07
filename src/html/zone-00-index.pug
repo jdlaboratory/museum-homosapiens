@@ -1,6 +1,6 @@
 extends ../templates/layout
 block content 
-    div(class="content")
+    div(class="content full-width")
         div(class="content-main")
             h1.index 기획1실 자료
             h3.index 동영상
@@ -51,6 +51,7 @@ block content
             div.modal-wrap  
                 a(href="./zone-00-vr.html")
                     img(class="modal-thumb vr-thumb", src="../assets/thumbnail/vr-01.jpg")
+                    p 기획1실
             
             div(class="modal", id="modal-1")
                 div(class="modal-bg modal-exit")
@@ -122,7 +123,7 @@ block content
                         source(src="../assets/videos/10_탐험.mp4", type="video/mp4")
                     button(class="modal-close modal-exit") X
 
-        div(class="content-nav")
+        div(class="content-nav full-width")
             span 
                 a(href='./zone-00-13.html') ← &nbsp; 이전
             span(class="current") 현재위치: 기획1실 자료
@@ -130,3 +131,6 @@ block content
                 a(href='./zone-01.html') 다음 &nbsp; →
 block footer
     script(src="../pre-js/modal.js")
+    script. 
+        const currentLink = document.querySelector("#nav-1");
+        currentLink.classList.add("active");

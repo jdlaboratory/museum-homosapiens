@@ -2,7 +2,7 @@ extends ../templates/layout
 block content 
     div(class="content")
         div(class="content-main")
-            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "play", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
                 source(src="../assets/videos/0-1-more.mp4", type="video/mp4")
             
         div(class="content-nav")
@@ -21,3 +21,6 @@ block info
         div(class="info-bottom")
 block footer
     script(src="../js/endNext.js")
+    script. 
+        const currentLink = document.querySelector("#nav-wait");
+        currentLink.classList.add("active");

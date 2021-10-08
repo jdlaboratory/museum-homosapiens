@@ -202,17 +202,20 @@ span.divider {
 //   width: calc(25% - 30px);
 // }
 
-// .pdf-thumb img {
-//   width: 100%;
-//   height: auto;
-// }
+.pdf-thumb img {
+  width: 100%;
+  height: auto;
+}
 .modal-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(auto-fill, minmax(20px, max-content));
-  gap: 5%;
+  column-gap: 5%;
   padding: 2% 4%;
   overflow: hidden;
+  a {
+    margin-bottom: 40px;
+  }
 
   p {
     padding-top: 8px;

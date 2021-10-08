@@ -1,0 +1,14 @@
+extends ../templates/layout
+block content 
+    div(class="content full-width")
+        div(class="content-main")
+            iframe(class="vtour", src="../assets/photo_vr_zone2/vtour/tour.html")
+            
+        div(class="content-nav full-width")
+            span 
+                a(href='./zone-01-index.html') ← &nbsp; 돌아가기
+
+block footer 
+    script. 
+        const currentLink = document.querySelector("#nav-2");
+        currentLink.classList.add("active");

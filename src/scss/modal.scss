@@ -38,11 +38,17 @@
   top: 15px;
   outline: none;
   appearance: none;
-  color: var(--accent-color);
+  color: #fff;
   background: none;
   border: 0px;
+  font-size: 30px;
   font-weight: bold;
   cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.modal-close:hover {
+  color: var(--accent-color);
 }
 
 .modalVideo {

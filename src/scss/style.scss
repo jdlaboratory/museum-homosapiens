@@ -97,6 +97,7 @@ span.divider {
 
 .content-main {
   padding-bottom: 60px;
+  position: relative;
 }
 
 .content-nav {
@@ -229,4 +230,42 @@ span.divider {
 
 .fill {
   height: calc(100vh - 120px) !important;
+}
+
+.content-main .intro-bg,
+.content-main .intro-video {
+  height: calc(100vh - 120px) !important;
+}
+
+.background-full video {
+  width: initial !important;
+  height: initial !important;
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  transform: translateX(-50%) translateY(-50%) !important;
+}
+
+.chapter-title {
+  width: 100%;
+  height: calc(100% - 60px);
+
+  z-index: 20;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chapter-title h3 {
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.chapter-title p {
+  font-size: 14px;
 }

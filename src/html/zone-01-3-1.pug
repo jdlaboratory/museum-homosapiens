@@ -1,0 +1,24 @@
+extends ../templates/layout
+block content 
+    div(class="content")
+        div(class="content-main")
+            video(class='video-js', data-setup='{"controls": true, "autoplay": "muted", "preload": "auto", "fluid": true, "aspectRatio": "16:9" }')
+                source(src="../assets/videos2/동굴영상_큰벽(쇼베, 라스코 등).mp4", type="video/mp4")
+            
+        div(class="content-nav")
+            span 
+                a(href='./zone-01-2.html') ← &nbsp; 이전
+            span(class="current") 현재위치: 동굴벽화 I
+            span
+                a(href='./zone-01-3-2.html') 다음 &nbsp; →
+block info 
+    div(class="info")
+        div(class="info-top")
+            h5 동굴벽화 I
+            p 동굴벽화는 호모 사피엔스가 남긴 대표적인 예술 작품입니다. 동굴벽화를 그린 이유에 대해서는 많은 가설이 있습니다. 의식을 치르는 과정에서 그린 그림, 풍요를 기원하는 그림, 사냥을 위한 제의 과정에서 그린 그림 등 여러 가지 견해가 제시되었습니다. 
+        div(class="info-bottom")
+block footer
+    script(src="../js/endAuto.js")
+    script. 
+        const currentLink = document.querySelector("#nav-2");
+        currentLink.classList.add("active");

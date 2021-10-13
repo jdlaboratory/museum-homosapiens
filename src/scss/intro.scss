@@ -60,6 +60,13 @@
 }
 
 .intro__button a span {
-  background-color: #ddd;
-  color: #777;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro__button a:hover span {
+  background-color: var(--accent-color);
+  color: #000;
 }

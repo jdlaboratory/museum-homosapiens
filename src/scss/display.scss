@@ -1,0 +1,80 @@
+.display-wrap {
+  width: calc(100% - 80px);
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 72px 40px;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.display {
+  display: inline-block;
+  vertical-align: top;
+  width: 27.3% !important;
+  max-width: 500px !important;
+  padding: 2%;
+  margin: 1% 1% 2% 1%;
+  // outline: 1px solid #555;
+
+  .display-img img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .display-text {
+    padding: 20px 0 0 0;
+
+    td {
+      font-size: 12.5px;
+      padding: 6px 0;
+      color: #ddd;
+      line-height: 150%;
+    }
+
+    tr td:first-child {
+      min-width: 80px;
+      color: #f1f1f1;
+    }
+
+    p {
+      font-size: 12.5px;
+      line-height: 200%;
+    }
+
+    h6 {
+      font-weight: 500;
+      line-height: 180%;
+    }
+  }
+}
+
+.wide {
+  width: 60.6% !important;
+  max-width: 1000px !important;
+
+  table {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .display {
+    width: 44% !important;
+  }
+
+  .wide {
+    width: 94% !important;
+    table {
+      max-width: 600px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .display {
+    width: 98% !important;
+  }
+}

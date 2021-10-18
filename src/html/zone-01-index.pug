@@ -3,14 +3,18 @@ block content
     div(class="content full-width")
         div(class="content-main")
             h1.index 기획2실 자료
+            
+            h3.index 주요 전시품
+            div.modal-wrap  
+                a(href="./zone-01-display.html")
+                    img(class="modal-thumb vr-thumb", src="../assets/thumbnail/dp-2.jpg")
+                    p 기획2실 주요 전시품
+            
             h3.index 동영상
             div.modal-wrap  
                 a(data-modal="modal-21")
                     img(class="modal-thumb", src="../assets/thumbnail/1-1.jpg")
-                    p 벽화 정보영상
-                a(data-modal="modal-22")
-                    img(class="modal-thumb", src="../assets/thumbnail/1-2.jpg")
-                    p 유전자 정보영상
+                    p 동굴벽화 정보영상
                 a(data-modal="modal-23")
                     img(class="modal-thumb", src="../assets/thumbnail/1-3.jpg")
                     p 동굴영상 I
@@ -20,7 +24,7 @@ block content
             h3.index 전시실 VR
             div.modal-wrap  
                 a(href="./zone-01-vr.html")
-                    img(class="modal-thumb vr-thumb", src="../assets/thumbnail/vr-01.jpg")
+                    img(class="modal-thumb vr-thumb", src="../assets/thumbnail/vr-02.jpg")
                     p 기획2실
             div(class="modal", id="modal-21")
                 div(class="modal-bg modal-exit")
@@ -28,14 +32,6 @@ block content
                     video(controls, class="modalVideo")
                         source(src="../assets/videos2/area-04.mp4", type="video/mp4")
                     button(class="modal-close modal-exit") <i class="fas fa-times-circle lg"></i>
-            
-            div(class="modal", id="modal-22")
-                div(class="modal-bg modal-exit")
-                div(class="modal-container")
-                    video(controls, class="modalVideo")
-                        source(src="../assets/videos2/area-05.mp4", type="video/mp4")
-                    button(class="modal-close modal-exit") <i class="fas fa-times-circle lg"></i>
-            
             div(class="modal", id="modal-23")
                 div(class="modal-bg modal-exit")
                 div(class="modal-container")

@@ -8,6 +8,7 @@
 
 /* Screens */
 @import "intro";
+@import "display";
 
 /* Video.js */
 @import url("https://vjs.zencdn.net/7.15.4/video-js.css");
@@ -44,7 +45,7 @@ h3.index {
   font-size: 24px;
   line-height: 150%;
   font-weight: 500;
-  padding: 40px 4% 10px;
+  padding: 20px 4% 10px;
 }
 
 p > strong {
@@ -220,6 +221,7 @@ span.divider {
 
   p {
     padding-top: 8px;
+    line-height: 150%;
     text-align: center;
   }
 }

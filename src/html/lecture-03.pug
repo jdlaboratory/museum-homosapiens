@@ -1,0 +1,18 @@
+
+extends ../templates/layout
+block content 
+    div(class="content full-width")
+        div(class="content-main")
+            div.video-container
+                iframe(width="100%" height="100vh" src="https://www.youtube.com/embed/LCP-b3JrQOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+        div(class="content-nav full-width")
+            span 
+                a(href='javascript:window.history.back();') ← &nbsp; 이전
+            span(class="current") 현재위치: 3강. 고인류가 우리에게 남긴 유전자 유산 - 정충원(서울대학교)
+            
+block footer
+    script(src="../pre-js/modal.js")
+    script. 
+        const currentLink = document.querySelector("#nav-end");
+        currentLink.classList.add("active");

@@ -14,11 +14,14 @@ block content
 block info 
     div(class="info")
         div(class="info-top")
+            audio(controls autoplay)
+                source(src="../assets/voice/zone-01-1.mp3", type="audio/ogg")
+                | 이 브라우저는 오디오를 지원하지 않습니다.
             h5 우리는 모두 호모 사피엔스 단일종입니다.
             p 기획2실로 가는 중간에 보이는 영상은 피부색과 생김새가 다른 다양한 인간의 모습을 보여주고 있습니다. 오늘날 지구상에는 78억 명이라는 다양한 인간이 있지만, 우리는 모두 호모 사피엔스라는 하나의 종입니다.
         div(class="info-bottom")
 block footer
-    script(src="../js/endAuto.js")
+    script(src="../js/endNext.js")
     script. 
         const currentLink = document.querySelector("#nav-c");
         currentLink.classList.add("active");

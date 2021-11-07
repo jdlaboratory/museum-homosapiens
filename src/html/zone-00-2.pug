@@ -14,6 +14,9 @@ block content
 block info 
     div(class="info")
         div(class="info-top")
+            audio(controls autoplay)
+                source(src="../assets/voice/zone-00-2.mp3", type="audio/ogg")
+                | 이 브라우저는 오디오를 지원하지 않습니다.
             h5 실감콘텐츠 700만 년 동안의 기억
             p 기획1실의 실감콘텐츠는‘700만년 동안의 기억’이라는 주제로 인류 진화사에서 중요한 10가지 사건들로 구성하였습니다(직립보행/기호, 예술/장례, 석기/언어, 피식자/사냥, 불/탐험). 
             p 이곳에서는 가로 약 18미터, 높이 3.6미터의 화이트 스크린으로 한 벽면을 가득 채운 3-4분 가량의 실감 영상이 연출됩니다. 5대의 프로젝터와 리어스크린을 활용하여 온통 하얗게 채워진 공간 안에서 저 너머의 미지의 인간과 조우합니다.
@@ -22,7 +25,7 @@ block info
           
         div(class="info-bottom")
 block footer
-    script(src="../js/endAuto.js")
+    script(src="../js/endNext.js")
     script. 
         const currentLink = document.querySelector("#nav-1");
         currentLink.classList.add("active");
